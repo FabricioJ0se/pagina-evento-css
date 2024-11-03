@@ -16,47 +16,100 @@
                 <ul>
                     <li><a href="#">Pagina inicial</a></li>
                     <li><a href="#">Locais</a></li>
-                    <li><a href="#">Sobre a gente</a></li>
+                    <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="banner">
-            <div>
-                <h2>Conheça o fantastico mundo infantil!</h2>
-                <p>Tenha o sentimento de proporcionar momentos inésqueciveis para seus filhos!</p>
-                <a href="#" class="reserva">Confira os horários</a>
+            <section class="banner">
+                <div>
+                 <h2>Conheça o fantastico mundo infantil!</h2>
+                 <p>Tenha o sentimento de proporcionar momentos inésqueciveis para seus filhos!</p>
+                  <a href="#" class="btn">Confira os horários</a>
+             </div>
+            </section>
+     <section class="Locais"></section>
+        <h2>Confira abaixo os locais disponiveis</h2>
+        <div class="card-grid">
+            <div id="card-1" class="card">
+                <a href="https://maps.app.goo.gl/3ijQwj95FK2UWS8V6" class="card-link">
+                    <img src="img/salao-morumbi.jpg" alt="salao de festa no morumbi">
+                    <div class="card-content">
+                        <h3>Morumbi</h3>
+                        <p>Descubra a diversão e brincadeiras no fantástico mundo do Morumbi!</p>
+                        <p>Local: Paineiras do Morumbi, São Paulo - SP, 05606-300</p>
+                        <p>Horários:</p>
+                        <p>Seg a Sex: das 14:00 às 22:00</p>
+                        <p>Sab, Dom e feriados: das 15:00 às 23:00</p>
+                        <br>
+                        <h4>clique na imagem para ver a localização no maps<h4>
+                    </div>
+                </a>
             </div>
-        </section>
+        
+            <div id="card-2" class="card">
+                <a href="https://maps.app.goo.gl/LFFzen85dmR7V2Xf8" class="card-link">
+                    <img src="img/salao-ipiranga.jpg" alt="salao de festa no ipiranga">
+                    <div class="card-content">
+                        <h3>Ipiranga</h3>
+                        <p>Desbrave a natureza no incrível mundo animal!</p>
+                        <p>Local:R. Capri, 145 - Pinheiros, São Paulo - SP, 05425-030 </p>
+                        <p>Horários:</p>
+                        <p>Seg a Sex: das 14:00 às 22:00</p>
+                        <p>Sab, Dom e feriados: das 15:00 às 23:00</p>
+                        <br>
+                        <h4>clique na imagem para ver a localização no maps<h4>
+                    </div>
+                </a>
+            </div>
+        
+            <div id="card-3" class="card">
+                <a href="https://maps.app.goo.gl/D8oQdQ1EWnwfFRvQ9" class="card-link">
+                    <img src="img/salao-itaquera.jpg" alt="salao de festa em itaquera">
+                    <div class="card-content">
+                        <h3>Itaquera</h3>
+                        <p>Venha rir e gargalhar no inédito circo!</p>
+                        <p>Local:Jardim Cleide, São Paulo - SP </p>
+                        <p>Horários:</p>
+                        <p>Seg a Sex: das 14:00 às 22:00</p>
+                        <p>Sab, Dom e feriados: das 15:00 às 23:00</p>
+                        <br>
+                        <h4>clique na imagem para ver a localização no maps<h4>
+                    </div>
+                </a>
+            </div>
+        </div>        
     </main>
-    <section class="Locais"></section>
-    <h2>Confira abaixo os locais disponiveis</h2>
-    <div class="card-grid">
-        <div id="card-1" class="card">
-            <img src="img/salao-morumbi.jpg" alt="salao de festa no morumbi">
-            <div class="card-content">
-                <h3>Morumbi</h3>
-                <p>Descubra a diversão e brincadeiras no fantástico mundo do morumbi!</p>
-            </div>
+    <br>
+    <footer>
+        <div>
+            <p>Obrigado por escolher o Mundo infantil para celebrar momentos especiais!</p>
+            <p>Contatos:</p>
+            <div class="logo-grid">
+                <div id="logo01" class="logo">
+                    <img src="img/logo-email.png" alt="logo email">
+                    <a href="mailto:MundoInfantil@gmail.com">MundoInfantil@gmail.com</a>
+                </div>
+                <div id="logo02" class="logo">
+                    <img src="img/logo-telefone.jpg" alt="logo telefone">
+                    <a href="tel:55 11 953951950">55 11 953951950</a>
+                </div>
         </div>
-        <div id="card-2" class="card">
-            <img src="img/salao-ipiranga.jpg" alt="salao de festa no ipiranga">
-            <div class="card-content">
-                <h3>ipiranga</h3>
-                <p>Desbrave a natureza no incrivel mundo animal!</p>
-            </div>
+    </footer>
+    <div id="contatoModal" class="modal">
+        <div class="modal-content">
+            <h2>Informe seus dados para receber promoções e novidedes:</h2>
+            <form>
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" name="name" required />
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" email="email" required />
+                <label for="inputTelefone">Telefone:</label>
+                <input type="tel" id="InputTelefone" name="telefone" required />
+                <button type="submit" class="btn">ENVIAR</button>
+            </form>
         </div>
-    </div>
-    <div id="card-3" class="card">
-        <img src="img/salao-itaquera.jpg" alt="salao de festa em itaquera">
-        <div class="card-content">
-            <h3>itaquera</h3>
-            <p>Venha rir e gargalhar no inédito circo!</p>
-        </div>
-    </div>
-    </section>
 </body>
-
 </html>

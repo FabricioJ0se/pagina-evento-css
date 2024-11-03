@@ -1,63 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    margin: 0; /* Remve a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui pading e borda no cálculo da largura e altura */
 }
-body{
-    background-color: bisque;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+body {
+    background-color: #FF7F50; /* Define a cor de fundo do corpo */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+    color: #000000; /* Define a cor do texto */
 }
-header{
-    background-color: bisque;
-    color: #333;
-    padding: 20px;
+.container {
+    width: 100%; /* Define a largura da container como 100% */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    background-color: bisque; /* Define a cor de fundo da container */
 }
-/*definindo o banner*/
-.banner{
-    background: url(img/background-pagina-balao-mobile.jpg);
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+header {
+    background-color: #001F3F; /* Define a cor de fundo do cabeçalho */
+    color: #ff6347; /* Define a cor do texto do cabeçalho */
+    padding: 20px; /* Adiciona preenchimento ao cabeçalho */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;/*adiciona sombra ao texto*/
 }
+header h1 {
+    text-align: center; /* Centraliza o título */
+    font-size: 36px; /* Define o tamanho da fonte do título */
+}
+header nav ul {
+    display: flex; /* Usa Flexbox para o layout do menu */
+    justify-content: center; /* Centraliza os utens do menu */
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 15px; /* Adiciona preenchimento ao menu */
+}
+header nav li {
+    margin: 15px; /* Adiciona margem entre os itens do menu */
+}
+header nav ul li a {
+    color: #ff6347; /* Define a cor do texto dos links do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px; /* Define o tamanho da fonte dos links */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;/*adiciona sombra ao texto*/
+}
+header nav li a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    color: rgb(0, 0, 0); /* Muda a cor do link ao passar o mouse */
+}
+.banner {
+    background: url(img/logo-mundo-infantil.jpeg); /* Define a imagem de fundo */
+    height: 100vh; /* Define a altura da seção como 100% da altura da viewport */
+    margin: 0; /* Remove margens */
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    background-size: contain; /* Faz a imagem de fundo se ajustar dentro da seção */
+    padding-bottom: 150px; /* Adiciona preenchimento na parte inferior */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+}
+.banner p {
+    font-size: 20px; /* Define o tamanho da fonte do parágrafo */
+    margin: 20px; /* Adiciona margem ao parágrafo */
+    color: #FF7F50; /* Define a cor do texto */
+    text-shadow: -1px -1px 0 #001F3F, 1px -1px 0 #001F3F, -1px 1px 0 #001F3F, 1px 1px 0 #001F3F;/*adiciona sombra ao texto*/
+}
+.banner a {
+    color: #FF7F50; /* Define a cor do texto do link */
+    text-shadow: -1px -1px 0 #ffffff,  1px -1px 0 #ffffff,  -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;/*adiciona sombra ao texto*/
+}
+.banner .btn {
+    background-color: #ff6347; /* Define a cor de fundo do botão */
+    color: #000; /* Define a cor do texto do botão */
+    padding: 20px; /* Adiciona preenchimento ao botão */
+    text-decoration: none; /* Remove o sublinhado do link do botão */
+    font-size: 18px; /* Define o tamanho da fonte do botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+}
+.banner .bnt:hover {
+    background-color: #e5533d; /* Muda a cor de fundo do botão ao passar o mouse */
+}
+.banner h2{
+    color: #001F3F;/* define a cor do texto */
+}
+.locais h2 {
+    text-align: center; /* Centraliza o título da seção */
+    font-size: 36px; /* Define o tamanho da fonte do título */
+} 
+.card-grid {
+    display: flex; /* Usa Flexbox para o layout dos cards */
+    justify-content:center; /* Centraliza os cards horizontalmente */
+    gap: 10px; /* Espaçamento entre os cards */
+}
+.card {
+    background-color: rgb(0, 195, 234); /* Define a cor de fundo do card */
+    border: 1px solid #fff; /* Adiciona uma borda branca ao card */
+    border-radius: 5px; /* Arredonda as bordas do card */
+    width: 300px; /* Define a largura do card */
+    box-shadow: #000000; /* Adiciona sombra ao card */
+}
+.card:hover {
+    transform: scale(1.10); /* Aumenta o tamanho do card ao passar o mouse */
+}
+.card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 300px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz a imagem cobrir a área do card sem distorcer */
+}
+.card-content {
+    padding: 20px; /* Adiciona preenchimento ao conteúdo do card */
+}
+.card h3 {
+    font-size: 24px; /* Define o tamanho da fonte do título do card */
+    margin: 10px; /* Adiciona margem ao título */
+    color: #000000; /* Define a cor do título do card */
+}
+.card h4 {
+    font-size: 10px; /* Define o tamanho da fonte do subtítulo do card */
+    margin: 10px; /* Adiciona margem ao subtítulo */
+    color: #000000; /* Define a cor do subtítulo do card */
+}
+.card p {
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo do card */
+    color: #000000; /* Define a cor do texto do parágrafo */
+}
+.card-link {
+    display: block; /* Faz o link ocupar todo o card */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+.logo-grid {
+    display: flex; /* Usa Flexbox para o layout dos logos */
+    justify-content: center; /* Centraliza os logos horizontalmente */
+    flex-direction: column; /* Muda a direção para vertical */
+}
+.logo img {
+    width: 2%; /* Define a largura da imagem do logo */
+    height: 20px; /* Define a altura da imagem do logo */
+    object-fit: cover; /* Faz a imagem cobrir a área do logo sem distorcer */
 
-.locais h2{
-    text-align: center;
-    font-size: 36px;
 }
-
-.card-grid{
-    display: flex;
-    justify-content: center;
+.logo a{
+    font-size: 15px;/* Define o tamanho da fonte do parágrafo do logo */
 }
-.card{
-    background-color: white;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: #333;
-}
-.card:hover{
-    transform: scale(1.10);
-}
-.card img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.card-content{
-    padding: 20px;
-
-}
-.card h3{
-    font-size: 24px;
-    margin: 10px;
-    color: #666;
-}
-.card p{
-    font-size: 16px;
-    color: #666;
-}
-
